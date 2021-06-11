@@ -1,1 +1,2 @@
-# Python Assignments and Projects
+Python for Informatics
+UCSD Extension
