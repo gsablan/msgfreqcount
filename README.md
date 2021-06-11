@@ -1,2 +1,2 @@
-Python for Informatics
-UCSD Extension
+#Python for Informatics
+#UCSD Extension
