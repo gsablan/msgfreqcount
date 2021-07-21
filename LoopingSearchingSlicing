@@ -1,0 +1,51 @@
+Looping Searching Slicing Assignment:
+
+Part 1 - Write a program called “process_numbers.py” that repeatedly reads numbers input by the user 
+until the user types “done”. After the user has entered “done”, print out (i.e. print) the total, 
+count, maximum, minimum, and average of the entered numbers.  
+
+Part 2 - Then, use the find() method and string slicing to extract the portion of the string after the colon 
+character and then use the float() function to convert the extracted string into a floating 
+point value.
+
+#%%
+
+Part 1:
+
+sum = 0
+count = 0
+maximum = 0
+minimum = 0
+average = 0
+
+while True:
+    try:
+        x = input('Enter a number: ')
+        if (x == 'Done'):
+            break
+        value = float(x)
+        sum = value + sum
+        count = count + 1
+        average = count/sum
+        maximum = x[0]
+        for x in [x]:
+            if x > maximum:
+                maximum = x
+        minimum = x[0]
+        for x in [x]:
+            if x < minimum:
+                minimum = x
+    except:
+        print('Invalid input')
+print(sum, count, maximum, minimum, average)
+
+#%%
+
+Part 2:
+
+string = avg_str = 'Average value read: 0.72903'
+atpos = string.find(':')
+num = string[atpos+1:].strip()
+print (num)
+
+
